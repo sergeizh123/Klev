@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>КЛЁВ — рыболовный навигатор</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+</head>
+<body>
+  <main class="app">
+    <section class="filters">
+      <label class="select-wrap">
+        <span class="sr-only">Рыба</span>
+        <select id="fish">
+          <option value="">Вся рыба</option>
+          <option>Щука</option>
+          <option>Окунь</option>
+          <option>Судак</option>
+          <option>Карп</option>
+          <option>Лещ</option>
+        </select>
+      </label>
+
+      <label class="select-wrap">
+        <span class="sr-only">Способ ловли</span>
+        <select id="method">
+          <option value="">Любой способ</option>
+          <option>Спиннинг</option>
+          <option>Фидер</option>
+          <option>Поплавок</option>
+          <option>Карпфишинг</option>
+        </select>
+      </label>
+    </section>
+
+    <section class="map-shell">
+      <div id="map" aria-label="Карта рыболовных мест"></div>
+    </section>
+
+    <section class="places">
+      <header class="places-header">
+        <h1>Места</h1>
+        <span id="count">5 мест</span>
+      </header>
+      <div id="cards"></div>
+    </section>
+  </main>
+
+  <dialog id="details">
+    <button id="close" class="close" aria-label="Закрыть">×</button>
+    <div id="details-content"></div>
+  </dialog>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
