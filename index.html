@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>КЛЁВ — рыболовный навигатор</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">КЛЁВ<span>·</span></div>
+    <div class="subtitle">Рыболовный навигатор Подмосковья</div>
+  </header>
+
+  <main class="layout">
+    <section class="intro">
+      <p class="eyebrow">Карта рыболовных мест</p>
+      <h1>Найди место.<br>Поймай свой трофей.</h1>
+      <p class="lead">Бесплатная карта с точками, фильтрами и карточками мест.</p>
+    </section>
+
+    <section class="controls">
+      <input id="search" type="search" placeholder="Поиск места или рыбы">
+      <select id="fish">
+        <option value="">Вся рыба</option>
+        <option>Щука</option>
+        <option>Окунь</option>
+        <option>Судак</option>
+        <option>Карп</option>
+        <option>Лещ</option>
+      </select>
+      <select id="method">
+        <option value="">Любой способ</option>
+        <option>Спиннинг</option>
+        <option>Фидер</option>
+        <option>Поплавок</option>
+        <option>Карпфишинг</option>
+      </select>
+    </section>
+
+    <section class="content">
+      <div id="map" aria-label="Карта рыболовных мест"></div>
+      <aside class="places">
+        <div class="places-head">
+          <h2>Места</h2>
+          <span id="count"></span>
+        </div>
+        <div id="cards"></div>
+      </aside>
+    </section>
+  </main>
+
+  <dialog id="details">
+    <button class="close" id="close">×</button>
+    <div id="details-content"></div>
+  </dialog>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
