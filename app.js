@@ -8,7 +8,7 @@ const places = [
 
 const map = L.map('map').setView([55.75,37.6], 9);
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-  attribution: '&copy; OpenStreetMap contributors',
+  attribution:,
   maxZoom: 19
 }).addTo(map);
 
