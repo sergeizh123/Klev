@@ -1,0 +1,13 @@
+:root{font-family:Inter,Arial,sans-serif;color:#102a43;background:#f4f7f9}
+*{box-sizing:border-box}body{margin:0}.wrap{max-width:1180px;margin:auto;padding:24px}
+.hero{background:#083b4c;color:white;border-radius:24px;padding:32px;margin-bottom:18px}
+.hero h1{font-size:clamp(36px,7vw,76px);margin:0 0 8px}.hero p{font-size:18px;opacity:.85}
+.controls,.places{background:white;border-radius:20px;padding:18px;margin-bottom:18px;box-shadow:0 8px 30px #1231}
+.controls{display:flex;gap:12px;flex-wrap:wrap}.controls label{display:flex;flex-direction:column;gap:6px;font-weight:700;flex:1;min-width:150px}
+.controls select,.controls input{padding:12px;border:1px solid #ccd6dd;border-radius:12px;font-size:16px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}#map{height:480px;border-radius:18px;overflow:hidden}
+.card{border:1px solid #e1e8ed;border-radius:16px;padding:16px;margin:10px 0}.card h3{margin:0 0 6px}
+.meta{color:#607d8b}.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+button{border:0;border-radius:12px;padding:11px 14px;background:#087f8c;color:white;font-weight:700;cursor:pointer}
+button.secondary{background:#e7f1f3;color:#083b4c}
+@media(max-width:760px){.grid{grid-template-columns:1fr}#map{height:360px}}
